@@ -31,7 +31,7 @@ export default function RootLayout({
       >
         <SideBar></SideBar>
         <HeroSection></HeroSection>
-        {/* {children} */}
+        {children}
       </body>
     </html>
   );

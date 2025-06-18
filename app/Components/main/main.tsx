@@ -11,18 +11,15 @@ const HeroSection = () => {
         overflow-hidden text-white text-center rounded-3xl
       "
     >
-      {/* Background Image */}
       <Image
-        src="/hero.png" // Using the hero.jpg you provided
+        src="/hero.png" 
         alt="A futuristic world map with connection points."
         layout="fill"
         objectFit="cover"
-        quality={85} // Adjust quality for performance
+        quality={85} 
         className="z-10"
       />
 
-      {/* This image simulates the blue overlay from your design. */}
-      {/* Make sure you have blueBg.png in your /public folder. */}
       <Image
         src="/blueBg.png"
         alt="Blue overlay"

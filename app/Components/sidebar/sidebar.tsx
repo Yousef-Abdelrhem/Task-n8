@@ -1,27 +1,15 @@
 "use client";
-import Dashboard from "@/app/dashboard/page";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
 import React, { useState } from "react";
 import DashboardIcon from "../DashboardIcon";
 import Teams from "../Teams";
-import Payments from "@/app/payments/page";
 import PaymentsIcon from "../paymentsIcon";
 import attendanceIcon from "../attendanceIcon";
 import settingsIcon from "../settingsIcon";
 
 const SideBar = () => {
-  const pathname = usePathname();
   const [active, setActive] = useState("Dashboard");
-  const icons = [
-    `<svg width="17" height="13" viewBox="0 0 17 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M12.0796 7.11694C13.1353 7.83356 13.875 8.80447 13.875 10.099V12.4107H16.9572V10.099C16.9572 8.41919 14.2063 7.42517 12.0796 7.11694Z" fill="#1A1A1A"/>
-<path d="M10.7924 6.24626C12.4954 6.24626 13.8747 4.86696 13.8747 3.16402C13.8747 1.46109 12.4954 0.0817871 10.7924 0.0817871C10.4303 0.0817871 10.0912 0.158843 9.76758 0.266721C10.4071 1.0604 10.7924 2.06983 10.7924 3.16402C10.7924 4.25822 10.4071 5.26765 9.76758 6.06133C10.0912 6.1692 10.4303 6.24626 10.7924 6.24626Z" fill="#1A1A1A"/>
-<path d="M6.16915 6.24626C7.87209 6.24626 9.25139 4.86696 9.25139 3.16402C9.25139 1.46109 7.87209 0.0817871 6.16915 0.0817871C4.46622 0.0817871 3.08691 1.46109 3.08691 3.16402C3.08691 4.86696 4.46622 6.24626 6.16915 6.24626ZM6.16915 1.62291C7.01677 1.62291 7.71027 2.31641 7.71027 3.16402C7.71027 4.01164 7.01677 4.70514 6.16915 4.70514C5.32154 4.70514 4.62803 4.01164 4.62803 3.16402C4.62803 2.31641 5.32154 1.62291 6.16915 1.62291Z" fill="#1A1A1A"/>
-<path d="M6.16936 7.01709C4.11196 7.01709 0.00488281 8.04964 0.00488281 10.0993V12.411H12.3338V10.0993C12.3338 8.04964 8.22675 7.01709 6.16936 7.01709ZM10.7927 10.8699H1.546V10.107C1.70011 9.55223 4.08885 8.55821 6.16936 8.55821C8.24987 8.55821 10.6386 9.55223 10.7927 10.0993V10.8699Z" fill="#1A1A1A"/>
-</svg>
-`,
-  ];
+
   const links = [
     { href: "/dashboard", icon: DashboardIcon, label: "Dashboard" },
     { href: "/teams", icon: Teams, label: "Teams" },
