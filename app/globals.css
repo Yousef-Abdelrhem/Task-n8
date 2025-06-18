@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@160..700&display=swap');
+@import "tailwindcss";
+
+:root {
+  --foreground: #171717;
+  --font-readex: "Readex Pro"; 
+
+  --color-primary: #001E33;
+  --color-white: #FFFFFF;
+  --color-blue: #0077CC;
+  --color-red: #E32134;
+  --color-dark: #1A1A1A;
+
+}
+
+@theme inline {
+  --color-background: var(--color-white);
+  --color-foreground: var(--color-dark);
+
+  --color-primary: var(--color-white);
+  --color-secondary: var(--color-blue);
+  --color-accent: var(--color-red);
+  --color-dark: var(--color-dark);
+  --color-white: var(--color-white);
+
+}
+
+.sidebar-shadow {
+  @apply shadow-[0px_0px_30px_rgba(0,0,0,0.3)];
+}
+
+
+
+/* .sidebar-active::after {
+  content: "";
+  position: absolute;
+  top: -30px;
+  right: 0;
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+  border-bottom-right-radius: 100%;
+  box-shadow: 10px 10px 0 10px #0077CC;
+}
+
+.sidebar-active::before {
+  content: "";
+  position: absolute;
+  bottom: -30px;
+  right: 0;
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+  border-top-right-radius: 50%;
+  box-shadow: 10px -10px 0 10px #0077CC;
+}  */
+
+.sidebar-active {
+  background-color: #0077CC;
+  color: white;
+}
+
+body {
+  background: var(--color-background);
+  color: var(--color-foreground);
+  font-family: var(--font-readex), sans-serif;
+}
